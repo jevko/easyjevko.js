@@ -136,7 +136,7 @@ toString({"a": "b"}) // -> 'a [b]'
 
 ## fromJevko
 
-Input: a Jevko, as returned by `parseJevko`.
+Input: a Jevko, as returned by [`parseJevko`](https://github.com/jevko/parsejevko.js).
 
 Description:
 
