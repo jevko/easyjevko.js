@@ -108,6 +108,14 @@ import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.js@v0.1.0
 
 Input: string which contains a Jevko.
 
+Description:
+
+* A Jevko without subjevkos is converted to a string.
+* A Jevko with subjevkos is converted to an array or an object. The first subjevko decides which:
+  * If the first subjevko has empty or whitespace-only prefix then the Jevko will be converted to an array.
+  * Otherwise the Jevko will be converted to an Object.
+* Leading and trailing spaces in object keys are ignored.
+
 Output: JavaScript object/array/string.
 
 ```js
@@ -116,7 +124,9 @@ fromString('a [b]') // -> {"a": "b"}
 
 ## toString
 
-Input: JavaScript object/array/string. 
+Input: JavaScript object/array/string, arbitrarily nested.
+
+Restrictions: empty arrays and objects are not allowed. Empty keys or keys with leading and trailing spaces in objects are not allowed.
 
 Output: pretty-printed string which contains a Jevko.
 
@@ -128,6 +138,14 @@ toString({"a": "b"}) // -> 'a [b]'
 
 Input: a Jevko, as returned by `parseJevko`.
 
+Description:
+
+* A Jevko without subjevkos is converted to a string.
+* A Jevko with subjevkos is converted to an array or an object. The first subjevko decides which:
+  * If the first subjevko has empty or whitespace-only prefix then the Jevko will be converted to an array.
+  * Otherwise the Jevko will be converted to an Object.
+* Leading and trailing spaces in object keys are ignored.
+
 Output: JavaScript object/array/string. 
 
 ```js
@@ -136,7 +154,9 @@ fromJevko(parseJevko('a [b]')) // -> {"a": "b"}
 
 ## toJevko
 
-Input: JavaScript object/array/string. 
+Input: JavaScript object/array/string, arbitrarily nested.
+
+Restrictions: empty arrays and objects are not allowed. Empty keys or keys with leading and trailing spaces in objects are not allowed.
 
 Output: a Jevko.
 
