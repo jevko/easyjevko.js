@@ -59,7 +59,7 @@ deno
 Paste the following into the REPL:
 
 ```js
-const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.0/mod.js')
+const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@0.1.0/mod.js')
 
 fromString(`
 id [johnny]
