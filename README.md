@@ -4,7 +4,7 @@
 
 **easyjevko.js** is a JavaScript library for Easy Jevko -- a simple data format built on [Jevko](https://jevko.org).
 
-It can convert between something like this:
+The library can convert between something like this:
 
 ```clj
 id [johnny]
@@ -31,6 +31,10 @@ and something like this:
 <!-- todo -->
 
 See [library functions](#library-functions).
+
+# Applications
+
+Easy Jevko can serve as a simple configuration, interchange, or serialization format or as a template for building more advanced formats on top of Jevko.
 
 # Ultraquickstart: Node.js or Deno REPL
 
