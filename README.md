@@ -21,7 +21,7 @@ and something like this:
 
 ```js
 {
-  "id": 'johnny',
+  "id": "johnny",
   "display name": "John Doe",
   "organization id": "megacorp",
   "follower ids": ["roger", "alice", "bob"]
@@ -83,7 +83,7 @@ The result should be something like:
 
 ```js
 {
-  "id": 'johnny',
+  "id": "johnny",
   "display name": "John Doe",
   "organization id": "megacorp",
   "follower ids": ["roger", "alice", "bob"]
