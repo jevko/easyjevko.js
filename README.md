@@ -102,6 +102,48 @@ Import from [jsDelivr](https://www.jsdelivr.com/):
 import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.js@v0.1.0/mod.js'
 ```
 
+# Library functions
+
+## fromString
+
+Input: string which contains a Jevko.
+
+Output: JavaScript object/array/string.
+
+```js
+fromString('a [b]') // -> {"a": "b"}
+```
+
+## toString
+
+Input: JavaScript object/array/string. 
+
+Output: pretty-printed string which contains a Jevko.
+
+```js
+toString({"a": "b"}) // -> 'a [b]'
+```
+
+## fromJevko
+
+Input: a Jevko, as returned by `parseJevko`.
+
+Output: JavaScript object/array/string. 
+
+```js
+fromJevko(parseJevko('a [b]')) // -> {"a": "b"}
+```
+
+## toJevko
+
+Input: JavaScript object/array/string. 
+
+Output: a Jevko.
+
+```js
+toJevko({"a": "b"}) // -> {"subjevkos":[{"prefix":"a","jevko":{"subjevkos":[],"suffix":"b"}}],"suffix":""}
+```
+
 ***
 
 [MIT License](LICENSE)
