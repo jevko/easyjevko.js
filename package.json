@@ -4,5 +4,6 @@
   "main": "bundle.js",
 	"license": "MIT",
   "files": ["bundle.js"],
-  "private": true
+  "private": true,
+  "author": "Darius J Chuck"
 }
