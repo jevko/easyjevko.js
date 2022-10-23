@@ -94,14 +94,14 @@ This imports the latest version of easyjevko.js from github via [jsDelivr](https
 
 ## Installation
 
-The examples install version `0.1.3`. Adjust as needed.
+The examples install version `0.1.4`. Adjust as needed.
 
 ### Node.js
 
 Note: requires Node.js >= 13.2.0.
 
 ```
-npm install jevko/easyjevko.js#semver:0.1.3
+npm install jevko/easyjevko.js#semver:0.1.4
 ```
 
 Then either use a dynamic import:
@@ -125,7 +125,7 @@ console.log(fromString('a [b]')) // -> {"a": "b"}
 Import from [jsDelivr](https://www.jsdelivr.com/):
 
 ```js
-import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.3/mod.js'
+import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.4/mod.js'
 ```
 
 # Library functions

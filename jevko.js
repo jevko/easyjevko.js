@@ -1,15 +1,6 @@
-export const toJevko = (value, {
-  open = '[',
-  close = ']',
-  escape = '`'
-} = {}) => {
+export const toJevko = (value) => {
   if (typeof value === 'string') {
-    let suffix = ''
-    for (const c of value) {
-      if (c === open || c === close || c === escape) suffix += escape
-      suffix += c
-    }
-    return {subjevkos: [], suffix}
+    return {subjevkos: [], suffix: value}
   }
   if (Array.isArray(value)) {
     const subjevkos = []
