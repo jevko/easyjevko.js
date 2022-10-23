@@ -103,7 +103,7 @@ npm install jevko/easyjevko.js#semver:0.1.0
 Import from [jsDelivr](https://www.jsdelivr.com/):
 
 ```js
-import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.js@v0.1.0/mod.js'
+import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.0/mod.js'
 ```
 
 # Library functions
