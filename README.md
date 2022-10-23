@@ -65,7 +65,7 @@ deno
 Paste the following into the REPL:
 
 ```js
-const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@0.1.2/mod.js')
+const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js/bundle.js')
 
 fromString(`
 id [johnny]
@@ -90,12 +90,18 @@ The result should be something like:
 }
 ```
 
+This imports the latest version of easyjevko.js from github via [jsDelivr](https://www.jsdelivr.com/), extracts the [fromString](#fromstring) function from it and calls it on a string, obtaining a JS object as a result.
+
 ## Installation
+
+The examples install version 0.1.3. Adjust as needed.
 
 ### Node.js
 
+Note: requires Node.js >= 13.2.0.
+
 ```
-npm install jevko/easyjevko.js#semver:0.1.2
+npm install jevko/easyjevko.js#semver:0.1.3
 ```
 
 Then either use a dynamic import:
@@ -119,7 +125,7 @@ console.log(fromString('a [b]')) // -> {"a": "b"}
 Import from [jsDelivr](https://www.jsdelivr.com/):
 
 ```js
-import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.2/mod.js'
+import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.3/mod.js'
 ```
 
 # Library functions

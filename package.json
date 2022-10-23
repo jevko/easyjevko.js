@@ -1,5 +1,7 @@
 {
   "type": "module",
   "name": "easyjevko.js",
-  "main": "bundle.js"
+  "main": "bundle.js",
+	"license": "MIT",
+  "files": ["bundle.js"]
 }
