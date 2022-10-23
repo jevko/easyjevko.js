@@ -65,7 +65,7 @@ deno
 Paste the following into the REPL:
 
 ```js
-const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@0.1.0/mod.js')
+const {fromString} = await import('https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@0.1.1/mod.js')
 
 fromString(`
 id [johnny]
@@ -95,7 +95,7 @@ The result should be something like:
 ### Node.js
 
 ```
-npm install jevko/easyjevko.js#semver:0.1.0
+npm install jevko/easyjevko.js#semver:0.1.1
 ```
 
 ### Deno and the browser
@@ -103,7 +103,7 @@ npm install jevko/easyjevko.js#semver:0.1.0
 Import from [jsDelivr](https://www.jsdelivr.com/):
 
 ```js
-import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.0/mod.js'
+import {fromString, toString} from 'https://cdn.jsdelivr.net/gh/jevko/easyjevko.js@v0.1.1/mod.js'
 ```
 
 # Library functions
