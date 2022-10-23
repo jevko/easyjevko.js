@@ -98,6 +98,22 @@ The result should be something like:
 npm install jevko/easyjevko.js#semver:0.1.2
 ```
 
+Then either use a dynamic import:
+
+```js
+import("easyjevko.js").then(({fromString, toString}) => {
+	console.log(fromString('a [b]')) // -> {"a": "b"}
+})
+```
+
+or, if you have [ECMAScript modules enabled](https://nodejs.org/api/esm.html#enabling), simply:
+
+```js
+import {fromString, toString} from "easyjevko.js"
+
+console.log(fromString('a [b]')) // -> {"a": "b"}
+```
+
 ### Deno and the browser
 
 Import from [jsDelivr](https://www.jsdelivr.com/):
