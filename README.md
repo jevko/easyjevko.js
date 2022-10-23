@@ -102,7 +102,7 @@ Then either use a dynamic import:
 
 ```js
 import("easyjevko.js").then(({fromString, toString}) => {
-	console.log(fromString('a [b]')) // -> {"a": "b"}
+  console.log(fromString('a [b]')) // -> {"a": "b"}
 })
 ```
 
