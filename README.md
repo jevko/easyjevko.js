@@ -1,5 +1,7 @@
 # easyjevko.js
 
+![logo](logo.png)
+
 [![](https://data.jsdelivr.com/v1/package/gh/jevko/easyjevko.js/badge)](https://www.jsdelivr.com/package/gh/jevko/easyjevko.js)
 
 **easyjevko.js** is a JavaScript library for Easy Jevko -- a simple data format built on [Jevko](https://jevko.org).
