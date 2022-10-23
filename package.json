@@ -3,5 +3,6 @@
   "name": "easyjevko.js",
   "main": "bundle.js",
 	"license": "MIT",
-  "files": ["bundle.js"]
+  "files": ["bundle.js"],
+  "private": true
 }
