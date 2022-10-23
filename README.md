@@ -94,7 +94,7 @@ This imports the latest version of easyjevko.js from github via [jsDelivr](https
 
 ## Installation
 
-The examples install version 0.1.3. Adjust as needed.
+The examples install version `0.1.3`. Adjust as needed.
 
 ### Node.js
 
