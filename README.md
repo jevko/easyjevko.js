@@ -1,6 +1,7 @@
+![logo](logo.svg)
+
 # easyjevko.js
 
-![logo](logo.svg)
 
 [![](https://data.jsdelivr.com/v1/package/gh/jevko/easyjevko.js/badge)](https://www.jsdelivr.com/package/gh/jevko/easyjevko.js)
 
