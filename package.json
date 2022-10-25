@@ -2,7 +2,7 @@
   "type": "module",
   "name": "easyjevko.js",
   "main": "bundle.js",
-	"license": "MIT",
+  "license": "MIT",
   "files": ["bundle.js"],
   "private": true,
   "author": "Darius J Chuck"
