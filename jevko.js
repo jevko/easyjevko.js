@@ -17,7 +17,6 @@ export const toJevko = (value) => {
     if (entries.length === 0) throw Error(`Empty object not allowed`)
     else if (Object.hasOwn(value, '')) throw Error(`Empty key not allowed`)
     else for (const [k, v] of entries) {
-      if (typeof k !== 'string') throw Error(`Nonstring keys not allowed`)
       if (k.trim() !== k) throw Error(`Leading or trailing space in keys not allowed`)
       subjevkos.push({prefix: k, jevko: toJevko(v)})
     }
